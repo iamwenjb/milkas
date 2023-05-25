@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/favicon_io/favicon-32x32.png" > 
+    <link rel="stylesheet" href="booking.css">
+    <title>Video-2</title>
+</head>
+
+<body>
+    
+<!-- nav bar -->
+<div class="navBar" id="nv">
+    <nav>
+        <ul>
+            <li><a href="/index.html"> <b>MAIN</b> </a></li>
+            <li><a href="/about.html"> <b>ABOUT</b> </a></li>
+            <li><a href="/menu.html"><b>MENU</b></a></li>
+            <li><a href="/booking.html"><b>BOOKING</b></a></li>
+        </ul>
+    </nav>
+</div>  
+
+
+
+<div class="main_bg">
+
+    <div class="form">
+
+        <div class="form-title">
+            <h1><span>Book Now <span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
+        </div>
+
+        <div class="main-form">
+            <form>
+
+                <div>
+                    <span>Full name</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+
+                <div>
+                    <span>Seats</span>
+                    <select name="people" id="people" required>
+                        <option value="">People</option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span>Time</span>
+                    <select name="Time" id="Time" required>
+                        <option value="">Pick a time</option>
+                        <option value="">14:45</option>
+                        <option value="">15:45</option>
+                        <option value="">16:45</option>
+                        <option value="">17:45</option>
+                        <option value="">18:45</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span>Date</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+
+                <div>
+                    <span>Phone number</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                    <div class="popup" id="popup">
+                        <h2>Thank you!</h2>
+                        <p>Your booking has been successfull</p>
+                        <button type="button"> O K </button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>    
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+ /* @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_bg{
+    background-image: url(/media/bg3.jpg);
+    filter:saturate(50%);
+    max-width: 2280px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.form{
+    width: 650px; /* hur bredd den kan vara*/
+}
+
+.form{
+    border: 800px;
+    border-color: bisque;
+    z-index: 1;
+}
+
+.form-title{ /* both texts over the form*/
+    text-align: center;
+    margin:40px ;
+}
+
+/*design of  big title*/
+.form-title h1{
+    color: rgba(255, 186, 121, 0.877);;
+    font-size: 40px;
+    margin-bottom: 17px; /* how much space underneath is needed*/
+    
+}
+
+    /* design of random text under "BOOK NOW" title*/
+.form-title p{
+    color: rgba(255, 186, 121, 0.842);
+    font: size 20px;;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    background: none;
+    font-size: 20px;
+    color: #6e6e6eea;
+    border: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 186, 121, 0.651);
+}
+.main-form div select{
+    width: 100%;
+    background: none;
+    font-size: 20px;
+    color: #6e6e6eea;
+    border: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;    
+    background-color: rgba(255, 186, 121, 0.651);
+}
+
+/* design of form titles*/
+.main-form div span{ 
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* start of booking button design*/
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{ /**/
+    width: 200px;
+    border: none;
+    background-color: rgb(211, 211, 159) ;
+    color: black ;
+    transition: all .300s;
+}
+#submit input:hover{ /* hover over button*/
+    width: 200px;
+    background-color: rgba(211, 211, 159, 0.397) ;
+    color: #fff ;
+}
+#submit input:active{ /* while clicked*/
+    font-size: 19px;
+    background-color: rgba(58, 48, 43, 0.829) ;
+    color: #fff ;
+}
+
+/*pop up code for booking button*/
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333; 
+    visibility: hidden;
+}
+
+.popup h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #da2323;
+    color: aquamarine;
+    border: #1a008b;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(255, 186, 121, 0.877);
+}
+
+/* end of booking button design*/
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+}

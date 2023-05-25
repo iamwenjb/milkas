@@ -1,0 +1,181 @@
+
+* /* it means that it applies to all elements*/{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popping", sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+.box1{ /*opening hours section*/
+  height: 100vh;
+  width: 100%;
+  background-image: url(/media/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed; /*To make parallax effect*/
+}
+
+.box2{ /*Menu link section*/
+  height: 75vh;
+  width: 100%;
+  background-image: url(/media/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed; /*To make parallax effect*/
+}
+
+.box3{ /*Social media section*/
+  height: 50vh;
+  width: 100%;
+  background-image: url(/media/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+   background-attachment: fixed; /*To make parallax effect*/
+}
+
+h1{ /*text for all boxes*/
+  font-family: sans-serif;
+  font-size: 48px;
+  color: #fff;
+  margin: 0px;
+  text-align: center;  
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center; /*the text that i add in this div will be in the middle*/
+  justify-content: center; /*same here*/
+}
+
+/* nav bar styling */
+
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li{
+  list-style: none; /* so it doesnt look like an actual list*/
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a{
+  text-decoration: none; /* so it doesnt have a  link appearance*/
+  color: #fff;
+  font-size: 18px;
+}
+
+.name{
+  text-align: center;
+}
+
+.name h1{
+  font-size:97px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s; /*hover over thing*/
+}
+
+.name h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.name a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size:28px;
+  padding: 28px 70px;
+  border-radius: 90px;
+  margin-top: 90px;
+}
+
+.name a{
+  border: 2px solid white;
+  border-radius: 18px;
+  padding: 5px;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+ /*öppetider*/
+.openinghours {
+  font-family:Lucida Console;
+  border-radius:4px;
+  margin:10px;
+  box-shadow: 0 0 10px black;
+  padding:0 10px 0 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+.openinghourscontent {
+  float:left;
+}
+.openinghourscontent h2 {
+  display:block;
+  text-align:center;
+  margin-top:.33em;
+}
+
+.opening-hours-table tr td:first-child {
+  font-weight:bold;
+}
+
+.opening-hours-table tr td {
+  padding:5px;
+}
+/*end of öppetider*/
+
+
+.box1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.box2 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.box3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+  
+  
+ @media (min-aspect-ratio: 16/9) {
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
